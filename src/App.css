@@ -1,0 +1,573 @@
+/*NavBar*/
+.navBar{
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+  list-style: none;
+  gap: 30px;
+  margin-right: 30px; 
+}
+#MobileNavigation{
+  display: none;
+}
+.links{
+  background-color:#041f30;
+  height:50px;
+  overflow-y: hidden; 
+}
+ul li{
+  list-style:none;
+  margin:0 20px;
+  transition:0.5s;
+}
+
+ul li .navLinks{
+  display: block;
+  position:relative;
+  text-decoration:none;
+  font-family: sans-serif;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+
+ul:hover li .navLinks{
+  transform:scale(1.5);
+  opacity:0.2;
+  filter:blur(5px);
+}
+
+ul li .navLinks:hover{
+  transform:scale(2);
+  opacity:1;
+  filter:blur(0);
+  text-decoration:none;
+  color: #9edede;
+}
+
+ul li .navLinks:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;  
+  transition:0.5s;
+  transform-origin:right;
+  transform:scaleX(0);
+  z-index:-1;
+}
+
+ul li .navLinks:hover:before{
+  transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
+}
+#AllComponent {
+  background-color: #041f30;
+  color: #cceeff;
+}
+
+
+
+
+/*Home*/
+.bgPage {
+  background-image: url("./picture/background.jpg");
+  background-size: cover;
+  background-position:center;
+  display: flex;
+  height:100vh;
+}
+
+
+.texts {
+  color:  #9edede;
+  font-size: 38px;
+  margin-left: 50px;
+  font-family: "Roboto", sans-serif;
+}
+.name{
+  color:#9edede;
+}
+
+
+
+
+/*About*/
+.about {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
+  line-height: 47.9px;
+  padding-bottom: 1px;
+  height: 100vh;
+}
+.myPic{
+  height: 200px;
+  border-radius: 50%;
+}
+.Headers {
+  padding-top: 1px;
+  text-align: center;
+  font-size: x-large;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+/*Skills*/
+.skillSection{
+  height: 100vh;
+}
+.skillHeader{
+  margin-top: 180px;
+}
+.skills {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.skillButton {
+  border: 2px solid #cceeff;
+  background-color:#041f30;
+  color: #cceeff;
+  width: 130px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15px;
+  transition: 0.5s;
+}
+.skillButton::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background:  #cceeff;  ;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.skillButton:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px  #cceeff;
+}
+
+.skillButton:hover {
+  color: black;
+  background-color:  #cceeff;
+  box-shadow: 0 0 15px  #cceeff;
+  text-shadow: 0 0 5px  #cceeff;
+  cursor: pointer;
+}
+#jsButton {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+#htmlButton {
+  margin-right: 80px;
+}
+#reactButton {
+  margin-right: 80px;
+}
+
+
+
+
+
+/*Contact*/
+.contactSection{
+  height: 100vh;
+}
+.contactHeader{
+  margin-top: 200px;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.myIcon {
+  width: 60px;
+  height: 50px;
+  padding-left: 5px;
+  padding-top: 9px;
+}
+
+a:visited {
+  color: #cceeff;
+}
+a :link {
+  color: #cceeff;
+}
+
+a :active {
+  color: #cceeff;
+}
+.iconButton {
+	float: left;
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	background:#9edede ;
+	overflow: hidden;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+}
+.middle{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.iconButton:hover {
+	width: 170px;
+  height: 70px;
+  display: flex;
+  background-color: white;
+}
+.phoneIcon:hover{
+  width: 240px;
+}
+.phoneIcon{
+  margin-left: 30px;
+}
+
+.iconButton:nth-child(1) .label {
+	color: #34a853;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.iconButton:nth-child(2) .label{
+  color: black;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.iconButton:nth-child(3) .label{
+  color:#0077b5 ;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.iconButton:nth-child(4) .label{
+  color:#163e20 ;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.iconButton .icon {
+	text-align: center;
+	border-radius: 50px;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+}
+.iconButton .icon a {
+	transition: all 0.3s ease-in-out;
+}
+.iconButton:hover .gmail {
+	color: red;
+}
+.iconButton .gmail{
+color: #041f30;
+}
+.iconButton:hover .gitHub{
+  color: black;
+}
+.iconButton .gitHub{
+color: #041f30;
+}
+.iconButton:hover .linkedIn{
+  color: #0077b5;
+}
+.iconButton .linkedIn{
+color: #041f30;
+}
+.iconButton .phone{
+  color: #041f30;
+}
+.iconButton:hover .phone{
+  color: #163e20;
+}
+
+
+/*Portfolio*/
+.allSamples1 {
+  display: flex;
+  position: relative;
+  transition: all 0.2s linear;
+  gap: 100px;
+}
+.samples{
+  height: 100vh;
+}
+.portfolio{
+  margin-top: 100px;
+}
+.image1{
+  display: block;
+}
+.image-hover-text 
+{
+  position: absolute;
+  top: 50px;
+  left: 182px;
+  width: 524px;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.5s linear;
+}
+.headPhone{
+  width: 533px;
+}
+.image-hover-text:hover 
+{
+  opacity: 1;
+}
+
+
+.image-hover-text-bubble 
+{
+  position: relative;
+  box-sizing: border-box;
+  height: 305px;
+  text-align: center;
+  background: #cceeff ;
+  margin: 0 auto;
+  padding: 25% 8px 5px 8px;
+  overflow: hidden;
+  font-size: 17px;
+  text-align: center;
+  word-wrap: break-word;
+
+}
+
+.image-hover-text-bubble:hover{
+  color: #0c1823;
+}
+
+.image-hover-text .image-hover-text-title
+{
+  color: black;
+  font-size: 25px;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.sampleItems {
+  margin-top: 50px;
+  margin-left: 180px;
+  border: 10px inset white;
+}
+#sample1 {
+  width: 100%;
+  height: 90%;
+}
+#sample2 {
+  width: 56%;
+  height: 90%;
+}
+
+
+
+/*CV*/
+.resume {
+  width: 28.5%;
+  border: 4mm ridge #ad802e;
+  margin-bottom: 30px;
+}
+.resumeSection {
+  text-align: center;
+  height: 100vh;
+}
+.download {
+  background-color: #0c1823;
+  border: 2mm ridge #ad802e;
+  color: #d2be6e;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  *{
+    overflow-x: hidden;
+  }
+
+  /*NavBar*/
+  #MobileNavigation{
+    display: inline;
+  }
+  .NavBar{
+    background-color: #062f45;
+  }
+  .hamburger{
+    cursor: pointer;
+    font-size: 35px;
+    color:#9edede;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+ 
+  #Navigation{
+    display: none;
+  }
+  .navBar{
+    flex-direction: column;
+  }
+  .links{
+    height: 650px;
+  }
+  ul li{
+    transition: none;
+  }
+  ul li .navLinks{
+    transition: none;
+    position: none;
+    text-transform: none;
+  }
+  ul:hover li .navLinks{
+    transform: none;
+    opacity: none;
+    filter: none;
+  }
+  ul li .navLinks:hover{
+    transform: none;
+    opacity: none;
+    filter: none;
+    color: #9edede;
+  }
+  ul li .navLinks:before{
+    transition: none;
+    position: none;
+    transform-origin: none;
+    transform: none;
+    background-color: #041f30;
+
+  }
+  ul li .navLinks:hover:before{
+    transition: none;
+    transform-origin: none;
+    transform: none;
+  }
+
+
+
+
+  /*Home*/
+  .bgPage{
+    display:block;
+    height: 93.5vh;
+  }
+
+
+  /*About*/
+  .myPic {
+    height: 150px;
+  }
+  .summary{
+    font-size: 18px;
+  }
+  .texts {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  /*Skills*/
+  .skills {
+    flex-direction: column;
+    padding-top: 0;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .skillHeader{
+    margin-top: 50px;
+  }
+  .skillButton {
+    margin-bottom: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  
+  #jsButton {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #gitButton {
+    margin-right: 0;
+  }
+  #htmlButton {
+    margin-right: 0;
+  }
+  #reactButton {
+    margin-right: 0;
+  }
+  .skillSection{
+    height: 678px;
+  }
+
+
+
+  /*Portfolio*/
+  .portfolio{
+    margin-top: 30px;
+  }
+  .samples{
+    height: 678px;
+  }
+  .allSamples1 {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+
+  .sampleItems {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  #sample1 {
+    width: 80%;
+    height: 70%;
+  }
+  #sample2 {
+    width: 80%;
+    height: 100%;
+  }
+  .image-hover-text 
+{
+ display: none;
+}
+
+
+/*CV*/
+  .resume {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .download{
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .resumeSection{
+    height: 678px;
+  }
+
+
+  /*Contact*/
+  .contactSection{
+    height: 94vh;
+  }
+}
