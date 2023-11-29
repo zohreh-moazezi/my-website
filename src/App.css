@@ -574,4 +574,31 @@ color: #041f30;
   .contactSection{
     height: 94vh;
   }
+  .iconButton{
+    transition: none;
+    float: none;
+  } 
+  .iconButton:hover{
+    width: 70px;
+    height: 70px;
+    display:inline;
+    background:#9edede ;
+
+  }
+
+  .iconButton:hover .gmail{
+    display: none;
+  }
+  .iconButton:hover .gitHub{
+    display: none;
+  }
+  .iconButton:hover .linkedIn{
+    display: none;
+  }
+  .iconButton:hover .phone{
+    display: none;
+  } 
+  .label{
+    display: none;
+  }
 }
