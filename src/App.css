@@ -587,16 +587,16 @@ color: #041f30;
   }
 
   .iconButton:hover .gmail{
-    display: none;
+    color: #041f30;
   }
   .iconButton:hover .gitHub{
-    display: none;
+    color: #041f30;
   }
   .iconButton:hover .linkedIn{
-    display: none;
+    color: #041f30;
   }
   .iconButton:hover .phone{
-    display: none;
+    color: #041f30;
   } 
   .label{
     display: none;
