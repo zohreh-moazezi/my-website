@@ -7,13 +7,14 @@ import CV from "./sections/CV";
 import Contact from "./sections/Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./NavBar/NavBar";
+import { PDFViewer } from "@react-pdf/renderer";
 import "./App.css";
 
 const App = () => (
   <>
     <Router>
       <div className="App">
-        <NavBar/>
+        <NavBar />
         <div id="page-body">
           <Routes>
             <Route path="/" element={<Home />} />

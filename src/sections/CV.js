@@ -1,20 +1,23 @@
 import React from "react";
-import resume from './../picture/cv.png'
+import pdfUrl from "../CVFile/ZohrehMoazezi'CV.pdf"
+import cv from "../CVFile/cv.png"
 
-const CV = () => (
+const CV = () => {
+   return(
     <>
     <div className="resumeSection" id="AllComponent">
         <div className="Headers" data-aos = "fade-down" ><h1>CV</h1></div>
         <div  data-aos = "fade-down" >
-            <img src={resume} className="resume" alt = "resume"></img>
+            <img src={cv} className="resume"/>
         </div>
         <div  data-aos = "fade-down" >
-        <a href={resume} download="MyExampleDoc" target='_blank'>
+        <a href={pdfUrl} download="MyExampleDoc" target='_blank'>
         <button className="download">Download</button>
         </a>
         </div>
         
     </div>
     </>
-);
+   );
+}
 export default CV;
