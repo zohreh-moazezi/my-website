@@ -11,7 +11,7 @@ const CV = () => {
             <img src={cv} className="resume"/>
         </div>
         <div  data-aos = "fade-down" >
-        <a href={pdfUrl} download="MyExampleDoc" target='_blank'>
+        <a href={pdfUrl} download="ZohrehMoazezi" target='_blank'>
         <button className="download">Download</button>
         </a>
         </div>
